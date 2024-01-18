@@ -15,6 +15,18 @@ The following table contains a description of the uploaded data and any relevant
 | nlnreg_expdata.mlx | MATLAB file | Code for performing the non-linear regression estimation of prefactor and exponent from experimental data in Fig. 5. |
 | mRNA_dist_FSP.ipynb | Jupyter notebook (Julia) | Code for Fig. 2 - solving the chemical master equation for the steady-state mRNA count distribution of the 5-state model and effective telegraph model and subsequent calculation of the Wasserstein distance. |
 
+## Package dependencies
+To execute the code included here the following Julia packages are required:
+- [Catalyst.jl](https://github.com/SciML/Catalyst.jl)
+- [FiniteStateProjection.jl](https://github.com/SciML/FiniteStateProjection.jl)
+- [MomentClosure.jl](https://github.com/augustinas1/MomentClosure.jl)
+- [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)
+- [Sundials.jl](https://github.com/SciML/Sundials.jl)
+- [LinearAlgebra.jl](https://github.com/JuliaLang/LinearAlgebra.jl)
+- [Plots.jl](https://github.com/JuliaPlots/Plots.jl)
+- [Latexify.jl](https://github.com/korsbo/Latexify.jl/tree/master)
+- [Colors.jl](https://github.com/JuliaGraphics/Colors.jl)
+
 ## References
 
 [[1]](https://www.nature.com/articles/s41597-019-0106-6) Li, G., Neuert, G. Multiplex RNA single molecule FISH of inducible mRNAs in single yeast cells. Sci Data 6, 94 (2019). https://doi.org/10.1038/s41597-019-0106-6
