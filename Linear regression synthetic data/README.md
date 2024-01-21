@@ -1,4 +1,6 @@
-README - Data sampled from CME mean used in linear regression (log[mean mRNA count] - log[time]) to estimate the exponent of the mean line to determine the lower bound on the minimum number of inactive states in a gene expression model.
+# Linear regression using synthetic data to estimate power law exponent
+
+Data sampled from CME mean used in linear regression (log[mean mRNA count] - log[time]) to estimate the exponent of the mean line to determine the lower bound on the minimum number of inactive states in a gene expression model.
 
 Format of data files:
 datN_j_tmax.csv
