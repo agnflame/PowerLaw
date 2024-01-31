@@ -15,17 +15,25 @@ The following table contains a description of the uploaded data and any relevant
 | nlnreg_expdata.mlx | MATLAB file | Code for performing the non-linear regression estimation of prefactor and exponent from experimental data in Fig. 5. |
 | mRNA_dist_FSP.ipynb | Jupyter notebook (Julia) | Code for Fig. 2 - solving the chemical master equation for the steady-state mRNA count distribution of the 5-state model and effective telegraph model and subsequent calculation of the Wasserstein distance. |
 
-## Package dependencies
-To execute the code included here the following Julia packages are required:
+## Software and Package dependencies
+The code stored on this repository runs on Julia v1.8.5 and MATLAB v2021b. To execute the code included here the following Julia packages are required:
 - [Catalyst.jl](https://github.com/SciML/Catalyst.jl)
-- [FiniteStateProjection.jl](https://github.com/SciML/FiniteStateProjection.jl)
-- [MomentClosure.jl](https://github.com/augustinas1/MomentClosure.jl)
-- [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)
-- [Sundials.jl](https://github.com/SciML/Sundials.jl)
-- [LinearAlgebra.jl](https://github.com/JuliaLang/LinearAlgebra.jl)
-- [Plots.jl](https://github.com/JuliaPlots/Plots.jl)
-- [Latexify.jl](https://github.com/korsbo/Latexify.jl/tree/master)
-- [Colors.jl](https://github.com/JuliaGraphics/Colors.jl)
+  - v12.3.2 for calculation of the steady-state mRNA count distributions in mRNA_dist_FSP.ipynb
+  - v13.5.1 for solving the time-dependent moment differential equations in Powerlaw_calc.ipynb
+- [FiniteStateProjection.jl](https://github.com/SciML/FiniteStateProjection.jl) (v0.2.1)
+- [MomentClosure.jl](https://github.com/augustinas1/MomentClosure.jl) (v0.3.1)
+- [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl) (v7.10.0)
+- [Sundials.jl](https://github.com/SciML/Sundials.jl) (v4.20.1)
+- [LinearAlgebra.jl](https://github.com/JuliaLang/LinearAlgebra.jl) (included in standard libraries)
+- [Plots.jl](https://github.com/JuliaPlots/Plots.jl) (v1.39.0)
+- [Latexify.jl](https://github.com/korsbo/Latexify.jl/tree/master) (v0.16.1)
+- [Colors.jl](https://github.com/JuliaGraphics/Colors.jl) (v0.12.10)
+
+## Computation timings
+The steady-state calculations were performed on a 10 core Intel i9 3.6 GHz CPU with 128GB of RAM.
+Using a single core, the non-linear regression calculations take fractions of a second, and solving the chemical master equation in steady-state using the finite state projection algorithm to compute the mRNA count distributions usually takes up to a second for a single parameter set, but can vary depending on how large the system of differential equations is.
+For standard sizes (<2000 variables) this usually takes less than a second, however for systems with >4000 variables this may take up to several minutes per parameter set.
+At least 16 GB of RAM is recommended to reproduce the steady-state calculations.
 
 ## References
 
