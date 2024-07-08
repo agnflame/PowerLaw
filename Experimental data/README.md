@@ -1,7 +1,9 @@
 # Experimental data demonstrating application of power law result
 
 This folder contains the data used to demonstrate the application of the power law result through using non-linear regression techniques to estimate the exponent of the power law which closely fits the mRNA induction curves measured in various experiments.
-Also contained is a MATLAB live editor notebook which illustrates this application on three experimental mRNA induction curves.
+Also contained is a Jupyter Notebook written in Julia which illustrates this application on some data used in this paper.
+We defined the power law model with delay before transcription initiation and used the BlackBoxOptim.jl package to minimise the residual sum of squares to find the optimal parameter set.
+This notebook also details the calculations of local uncertainties in the model parameters used on bulk data.
 
 For both data sets, in each data file, highlighted in red, are the times and counts used in the non-linear regression, as well as the results of the regression analysis.
 This includes the estimates of the: prefactor, exponent, standard errors in these estimates, test statistic, p-value, $R^2$, and root mean-square error.

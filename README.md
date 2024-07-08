@@ -8,11 +8,11 @@ The following table contains a description of the uploaded data and any relevant
 
 | Name | Type | Description |
 | ----------- | -------- | ----------- |
-| Experimental data | Folder | Contains the experimental data from [[1]](https://www.nature.com/articles/s41597-019-0106-6) and [[2]](https://www.pnas.org/doi/10.1073/pnas.1309990110) that was used in the non-linear regression and estimation of power-law exponents for Fig. 5 and Table I. |
-| Linear regression synthetic data | Folder | Contains the synthetic data generated for Fig. 4 to validate the use of short-time mean mRNA count measurements to estimate the power-law exponent. |
-| Steady-state data | Folder | Contains the data from sampling the steady-state mRNA count distributions of various N = 3,4,5 state models and comparing with the corresponding effective telegraph model distribution, investigated in Fig. 2. |
-| Powerlaw_calc.ipynb | Jupyter notebook (Julia) | Code for Fig. 3 - solving moment equations to investigate power-law behaviour. |
-| nlnreg_expdata.mlx | MATLAB file | Code for performing the non-linear regression estimation of prefactor and exponent from experimental data in Fig. 5. |
+| Experimental data | Folder | Contains the experimental data from [[1]](https://www.nature.com/articles/s41597-019-0106-6) and [[2]](https://www.pnas.org/doi/10.1073/pnas.1309990110) that was used in the nonlinear regression and estimation of short-time exponents for Fig. 5 and Fig. S13. |
+| Synthetic Data for regression | Folder | Contains the synthetic data generated for Fig. 4 and Figs. S2-S9 to validate the use of short-time mean mRNA count measurements to estimate the exponent. |
+| Steady-state data | Folder | Contains the data from sampling the steady-state mRNA count distributions of various N = 3,4,5 state models and comparing with the corresponding effective telegraph model distribution, investigated in Fig. 2, Fig. S1, and Fig. S14. |
+| Powerlaw_calc.ipynb | Jupyter notebook (Julia) | Code for Fig. 3 - solving moment equations to investigate power-law behaviour in the mRNA count statistics. |
+| Example_DataRegression | Jupyter notebook (Julia) | Code for performing the non-linear regression estimation of model parameters applied to yeast data in Fig. 5 and mouse data in Fig. S13. |
 | mRNA_dist_FSP.ipynb | Jupyter notebook (Julia) | Code for Fig. 2 - solving the chemical master equation for the steady-state mRNA count distribution of the 5-state model and effective telegraph model and subsequent calculation of the Wasserstein distance. |
 
 ## Package dependencies
@@ -26,6 +26,12 @@ To execute the code included here the following Julia packages are required:
 - [Plots.jl](https://github.com/JuliaPlots/Plots.jl)
 - [Latexify.jl](https://github.com/korsbo/Latexify.jl/tree/master)
 - [Colors.jl](https://github.com/JuliaGraphics/Colors.jl)
+- [CairoMakie.jl]()
+- [LsqFit.jl]()
+- [BlackBoxOptim.jl]()
+- [SpecialFunctions.jl]()
+- [CSV.jl]()
+- [XLSX.jl]()
 
 ## References
 
