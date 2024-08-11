@@ -4,9 +4,9 @@ Data and code for the paper ['Transient power-law behaviour following induction 
 
 Please direct any questions regarding the paper to the authors. For any questions regarding the code please raise an issue or contact Andrew.
 
-![Illustration of the power law result for the short-time behaviour of the mean mRNA count following gene induction.](https://github.com/agnflame/PowerLaw/tree/main/Repo%20Images/PowerLaw_example.png "Transient power-law behaviour in stochastic gene expression")
+![Illustration of the power law result for the short-time behaviour of the mean mRNA count following gene induction.](./Repo%20Images/PowerLaw_example.png "Transient power-law behaviour in stochastic gene expression")
 
-![An example of the steady-state mRNA count distribution of both a 5-state model and its effective telegraph model.](https://github.com/agnflame/PowerLaw/tree/main/Repo%20Images/5statemodel_example.png "Steady-state mRNA count distribution")
+![An example of the steady-state mRNA count distribution of both a 5-state model and its effective telegraph model.](./Repo%20Images/5statemodel_example.png "Steady-state mRNA count distribution")
 
 The following table contains a description of the uploaded data and any relevant code used in the analysis and figures in the aforementioned paper, as well as a description of the data format.
 
