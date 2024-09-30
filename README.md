@@ -8,12 +8,12 @@ Please direct any questions regarding the paper to the authors. For any question
 
 ![An example of the steady-state mRNA count distribution of both a 5-state model and its effective telegraph model.](./Repo%20Images/5statemodel_example.png "Steady-state mRNA count distribution")
 
-The following table contains a description of the uploaded data and any relevant code used in the analysis and figures in the aforementioned paper, as well as a description of the data format.
+The following table contains a description of the uploaded data and relevant code used in the analysis and figures in the aforementioned paper, as well as a description of the data format.
 
 | Name | Type | Description |
 | ----------- | -------- | ----------- |
 | Experimental data | Folder | Contains the experimental data from [[1]](https://www.nature.com/articles/s41597-019-0106-6) and [[2]](https://www.pnas.org/doi/10.1073/pnas.1309990110) that was used in the nonlinear regression and estimation of short-time exponents for Fig. 5, Fig. S11, and Fig. S13. |
-| Synthetic Data for Regression | Folder | Contains the synthetic data generated for Fig. 4 and Figs. S2-S9 to validate the estimation of the short-time exponent from mean mRNA count measurements. |
+| Synthetic Data for Regression | Folder | Contains the synthetic data generated for Fig. 4, Figs. S2-S9, and Figs. S15-S16 to validate the estimation of the short-time exponent from mean mRNA count measurements. |
 | Steady-state data | Folder | Contains the data from sampling the steady-state mRNA count distributions of various N = 3,4,5 state models and comparing with the corresponding effective telegraph model distribution, investigated in Fig. 2, Fig. S1, and Fig. S14. |
 | Powerlaw_calc.ipynb | Jupyter notebook (Julia) | Code for Fig. 3 - solving moment equations to investigate power-law behaviour in the mRNA count statistics. |
 | Example_DataRegression | Jupyter notebook (Julia) | Code for performing the non-linear regression and estimation of model parameters applied to the yeast data in Figs. 5 and S11 and the mouse data in Fig. S13. |

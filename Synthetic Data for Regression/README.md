@@ -6,6 +6,8 @@ In the case of a finite number of cells, the mean was computed across trajectori
 
 To investigate the effects of mRNA capture efficiency (important when considering experimental viability) on the short-time exponent we introduce a new parameter - the mRNA capture probability. The same procedure as done for Figs. S2-S5 was repeated with a fixed finite sample size of 1000, and the mRNA capture probability was varied over 0.2, 0.4, 0.6, 0.8, and 1.0, represeting various degrees of mRNA capture success from different experimental techniques (i.e. scRNAseq, bulk RNAseq, smFISH, etc.).
 
+To investigate the effect of an initial mixed gene state distribution (rather than a Dirac delta distribution in a single gene state) on the estimation of the short-time exponent, different initial conditions were considered, including a uniform distribution and various random initial distributions. 
+
 ## Fig. 4 Data structure
 
 Format of data filenames:
@@ -39,9 +41,15 @@ The filenames take the same format to that described above for Figs. S2-S5.
 
 Each file contains the single parameter set used to simulate the SSA trajectories, the mean mRNA count at the final sample, the value of $t_on$ (representing the time of the final sample), the infinte sample size estimates of the short-time exponent obtained from the CME, and 5000 estimates of the short-time exponent (from both linear and nonlinear regression) for each mRNA capture probability and the R-squared values. 
 
-## Parameter sets
+## Figs. S2-S9 Parameter sets
 
 The file "ParameterSets_FiniteSampSize.xlsx" contains a summary of the parameter sets chosen for Figs. S2-S9.
+
+## Figs. S15-S16 Data structure
+
+The file "SyntheticData_G1G3_MixedInitialConditions.csv" contains the initial conditions, synthetic data, and regression results used in Fig. S15.
+
+The file "SyntheticData_ParameterSweep_MixedInitialConditions.csv" contains the parameter sets, initial conditions, synthetic data, and regression results used in Fig. S16.
 
 ## Code to reproduce figures
 
@@ -51,9 +59,11 @@ The file "Code_Figs_S2_to_S5.R" is an R script and contains the necessary code t
 
 The file "Code_Figs_S6_to_S9.R" is an R script and contains the necessary code to reproduce the boxplots shown in Figs. S6-S9.
 
+The file "Code_Figs_S15_to_S16.ipynb" is a Jupyter notebook written in Julia and contains the necessary code to reproduce the plots in Fig. S15 and Fig. S16.
+
 ## Package dependencies
 
-To reproduce some of the SI figures the installation of the following R libraries is required:
+To reproduce some of the SI figures (Figs. S2-S9) the installation of the following R libraries is required:
 - [ggplot2](https://ggplot2.tidyverse.org/)
 - [readxl](https://readxl.tidyverse.org/)
 - [HDInterval](https://cran.r-project.org/package=HDInterval)
