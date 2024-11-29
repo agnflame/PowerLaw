@@ -1,5 +1,7 @@
 # Transient power-law behaviour in stochastic gene expression models
 
+[![DOI](https://zenodo.org/badge/734792222.svg)](https://doi.org/10.5281/zenodo.14245773)
+
 Data and code for the paper ['Transient power-law behaviour following induction distinguishes between competing models of stochastic gene expression'](https://www.biorxiv.org/content/10.1101/2023.12.30.573521v1).
 
 Please direct any questions regarding the paper to the authors. For any questions regarding the code please raise an issue or contact Andrew.
@@ -39,6 +41,24 @@ To execute the code included here the following Julia packages are required:
 - [DataFrames.jl](https://dataframes.juliadata.org)
 - [CSV.jl](https://csv.juliadata.org)
 - [XLSX.jl](https://felipenoris.github.io/XLSX.jl)
+
+## Citation
+
+This repository can be cited in the following way:
+
+Andrew Nicoll. (2024). agnflame/PowerLaw: Pre-release (v0.1.0). Zenodo. [https://doi.org/10.5281/zenodo.14245774](https://doi.org/10.5281/zenodo.14245774)
+
+```
+@misc{nicoll_agnflamepowerlaw_2024,
+	title = {agnflame/{PowerLaw}: {Pre}-release},
+	url = {https://doi.org/10.5281/zenodo.14245774},
+	publisher = {Zenodo},
+	author = {Nicoll, Andrew},
+	month = nov,
+	year = {2024},
+	doi = {10.5281/zenodo.14245774},
+}
+```
 
 ## References
 
