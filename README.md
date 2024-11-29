@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/734792222.svg)](https://doi.org/10.5281/zenodo.14245773)
 
-Data and code for the paper ['Transient power-law behaviour following induction distinguishes between competing models of stochastic gene expression'](https://www.biorxiv.org/content/10.1101/2023.12.30.573521v1).
+Data and code for the paper ['Transient power-law behaviour following induction distinguishes between competing models of stochastic gene expression'](https://www.biorxiv.org/content/10.1101/2023.12.30.573521v2).
 
 Please direct any questions regarding the paper to the authors. For any questions regarding the code please raise an issue or contact Andrew.
 
