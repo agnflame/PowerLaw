@@ -4,7 +4,7 @@ This folder contains the data used in Fig. 2 to demonstrate that across vast reg
 
 ## Notebook
 
-Also in this folder is the mRNA_dist_FSP.ipynb notebook which illustrates the calculation of the $N$ = 5-state model and effective telegraph model steady-state mRNA count distributions for a given parameter set, using the Finite State Projection (FSP) algorithm of solving the chemical master equation (CME).
+Also in this folder is the `mRNA_dist_FSP.ipynb` notebook which illustrates the calculation of the $N$ = 5-state model and effective telegraph model steady-state mRNA count distributions for a given parameter set, using the Finite State Projection (FSP) algorithm of solving the chemical master equation (CME).
 The notebook shows the calculation of the: joint distribution (as given by the CME), marginal mRNA count distribution (probability mass function), cumulative distribution function (CDF), and Wasserstein distance (computed using the two CDFs).
 
 ## Steady-state data
@@ -24,14 +24,14 @@ Note that in the paper the transcription (mRNA synthesis) rates $\rho$ and $\rho
 
 ### Distribution shapes
 
-The parameter sets chosen for Fig. 2D-G and Fig. S1 can be found in the file "Distribution_shapes_in_Fig2_FigS1.xlsx", along with important statistics, distance metrics, and numerical distributions.
-These parameter sets are also given in Tables S1 and S5.
+The parameter sets chosen for Fig. 2D-G and Supplementary Fig. 1 can be found in the file `Distribution_shapes_in_Fig2_SuppFig1.xlsx`, along with important statistics, distance metrics, and numerical distributions.
+These parameter sets are also given in Supplementary Tables 1 and 5.
 
-The parameter sets chosen for Fig. S14 can be found in the file "SteadyState_SI_table.xlsx" and are detailed in SI Note 6.7.
-These parameter sets are also given in Tables S8.
+The parameter sets chosen for Supplementary Fig. 2 can be found in the file `SteadyState_SI_table.xlsx` and are detailed in Supplementary Note 5.
+These parameter sets are also given in Supplementary Table 8.
 
 ### Boxplots percentiles
 
 The results from each parameter set were used to compute the distribution of Wasserstein distances for each $N$ = 3, 4, 5 state model and each distribution shape (I, II, III or IV).
-The summary statistics for each boxplot in Fig. 2H can be found in the file "Percentiles_boxplots.xlsx", containing the 10th, 25th (lower quartile), 50th (median), 75th (upper quartile), and 90th percentiles of the WDs.
-These summary statistics can also be found in Table S2.
+The summary statistics for each boxplot in Fig. 2H can be found in the file `Percentiles_boxplots.xlsx`, containing the 10th, 25th (lower quartile), 50th (median), 75th (upper quartile), and 90th percentiles of the WDs.
+These summary statistics can also be found in Supplementary Table 2.

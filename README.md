@@ -2,7 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/734792222.svg)](https://doi.org/10.5281/zenodo.14245773)
 
-Data and code for the paper ['Transient power-law behaviour following induction distinguishes between competing models of stochastic gene expression'](https://www.biorxiv.org/content/10.1101/2023.12.30.573521v2).
+Data and code for the paper ['Transient power-law behaviour following induction distinguishes between competing models of stochastic gene expression'](https://www.nature.com/articles/s41467-025-58127-4), now published in *Nature Communications*.
+Preprint available [here](https://www.biorxiv.org/content/10.1101/2023.12.30.573521v2).
 
 Please direct any questions regarding the paper to the authors. For any questions regarding the code please raise an issue or contact Andrew.
 
@@ -10,18 +11,19 @@ Please direct any questions regarding the paper to the authors. For any question
 
 ![An example of the steady-state mRNA count distribution of both a 5-state model and its effective telegraph model.](./Repo%20Images/5statemodel_example.png "Steady-state mRNA count distribution")
 
-The following table contains a description of the uploaded data and relevant code used in the analysis and figures in the aforementioned paper, as well as a description of the data format.
+The following table contains a description of the uploaded data and relevant code used in the analysis and figures in the paper, as well as a description of the data format.
 
 | Name | Type | Description |
 | ----------- | -------- | ----------- |
-| Experimental data | Folder | Contains the experimental data from [[1]](https://www.nature.com/articles/s41597-019-0106-6) and [[2]](https://www.pnas.org/doi/10.1073/pnas.1309990110) that was used in the nonlinear regression and estimation of short-time exponents for Fig. 5, Fig. S11, and Fig. S13. |
-| Synthetic Data for Regression | Folder | Contains the synthetic data generated for Fig. 4, Figs. S2-S9, and Figs. S15-S16 to validate the estimation of the short-time exponent from mean mRNA count measurements. |
-| Steady-state data | Folder | Contains the data from sampling the steady-state mRNA count distributions of various N = 3,4,5 state models and comparing with the corresponding effective telegraph model distribution, investigated in Fig. 2, Fig. S1, and Fig. S14. |
-| Powerlaw_calc.ipynb | Jupyter notebook (Julia) | Code for Fig. 3 - solving moment equations to investigate power-law behaviour in the mRNA count statistics. |
-| Example_DataRegression | Jupyter notebook (Julia) | Code for performing the non-linear regression and estimation of model parameters applied to the yeast data in Figs. 5 and S11 and the mouse data in Fig. S13. |
-| mRNA_dist_FSP.ipynb | Jupyter notebook (Julia) | Code for Fig. 2 - solving the chemical master equation for the steady-state mRNA count distribution of the 5-state model and effective telegraph model and subsequent calculation of the Wasserstein distance. |
+| Experimental data | Folder | Contains the experimental data from [[1]](https://www.nature.com/articles/s41597-019-0106-6) and [[2]](https://www.pnas.org/doi/10.1073/pnas.1309990110) that was used in the nonlinear regression and estimation of short-time exponents for Fig. 5, Supplementary Fig. 14, and Supplementary Fig. 16. |
+| Synthetic Data for Regression | Folder | Contains the synthetic data generated for Fig. 4 and Supplementary Figs. 3-12 to validate the estimation of the short-time exponent from mean mRNA count measurements. |
+| Steady-state data | Folder | Contains the data from sampling the steady-state mRNA count distributions of various $N$ = 3,4,5 state models and comparing with the corresponding effective telegraph model distribution, investigated in Fig. 2, and Supplementary Figs. 1-2. |
+| `Powerlaw_calc.ipynb` | Jupyter notebook (Julia) | Code for Fig. 3 - solving moment equations to investigate power-law behaviour in the mRNA count statistics. |
+| `Example_DataRegression.ipynb` | Jupyter notebook (Julia) | Code for performing the non-linear regression and estimation of model parameters applied to the yeast data in Fig. 5 and Supplementary Fig. 14 and the mouse data in Supplementary Fig. 16. |
+| `mRNA_dist_FSP.ipynb` | Jupyter notebook (Julia) | Code for Fig. 2 - solving the chemical master equation for the steady-state mRNA count distribution of the 5-state model and effective telegraph model and subsequent calculation of the Wasserstein distance. |
 
 ## Package dependencies
+All Julia calculations were performed in v1.8.5.
 To execute the code included here the following Julia packages are required:
 - [Catalyst.jl](https://github.com/SciML/Catalyst.jl)
 - [FiniteStateProjection.jl](https://github.com/SciML/FiniteStateProjection.jl)
@@ -43,6 +45,31 @@ To execute the code included here the following Julia packages are required:
 - [XLSX.jl](https://felipenoris.github.io/XLSX.jl)
 
 ## Citation
+
+Our paper can be cited in the following way:
+
+Nicoll, A. G., Szavits-Nossan, J., Evans, M. R., & Grima, R. (2025). Transient power-law behaviour following induction distinguishes between competing models of stochastic gene expression. Nature Communications, 16(1), 2833. [doi:10.1038/s41467-025-58127-4](https://www.nature.com/articles/s41467-025-58127-4)
+
+```
+@article{nicoll_transient_2025,
+	title = {Transient power-law behaviour following induction distinguishes between competing models of stochastic gene expression},
+	volume = {16},
+	copyright = {2025 The Author(s)},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-025-58127-4},
+	doi = {10.1038/s41467-025-58127-4},
+	language = {en},
+	number = {1},
+	urldate = {2025-03-24},
+	journal = {Nature Communications},
+	author = {Nicoll, Andrew G. and Szavits-Nossan, Juraj and Evans, Martin R. and Grima, Ramon},
+	month = mar,
+	year = {2025},
+	note = {Publisher: Nature Publishing Group},
+	keywords = {Bioinformatics, Computational models, Transcription},
+	pages = {2833},
+}
+```
 
 This repository can be cited in the following way:
 

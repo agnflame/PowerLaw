@@ -10,7 +10,7 @@ This includes the estimates of the: prefactor, exponent, delay, constant mRNA co
 
 ## Yeast osmotic stress data
 
-The first data set is from [[1]](https://www.nature.com/articles/s41597-019-0106-6) and contains measurements of the nuclear and cytoplasmic mRNA counts of two genes, CTT1 and STL1, which are involved in osmotic stress response pathways in the yeast species, *S. cerevisiae*.
+The first data set is from [[1]](https://www.nature.com/articles/s41597-019-0106-6) and contains measurements of the nuclear and cytoplasmic mRNA counts of two genes, *CTT1* and *STL1*, which are involved in osmotic stress response pathways in the yeast species, *S. cerevisiae*.
 
 The raw data, as given in [1], consists of single-cell measurements of the nuclear, cytoplasmic, and total (nuclear + cytoplasmic) mRNA counts measured using smFISH (single molecule fluorescence in situ hybridization) at various time points following application of two osmotic stress stimuli - 0.2 mol NaCl (denoted as Exp 1) and 0.4 mol NaCl (denoted as Exp 2).
 The number of cells measured varies per time point, of which there are 16 total time points.
@@ -19,7 +19,7 @@ The mean mRNA counts were obtained by combining all experimental replicas and av
 This resulted in a mean mRNA curve (in time) for each experimental condition, each gene, and each RNA species (nuclear, cytoplasmic, and total), resulting in 12 curves in total, of which eight were used in Fig. 5.
 Through bootstrapping the single-cell data, multiple resampled mean mRNA count curves can be obtained to compute the sampling distribution for the estimated parameters to investigate their uncertainty.
 
-The file "Code_Figs_5_S11.ipynb" is a Jupyter notebook written in Julia and can be ran to reproduce Figs. 5 & S11 showing the results of fitting the nonlinear regression model to the yeast data.
+The file `Code_Figs_5_Supp14.ipynb` is a Jupyter notebook written in Julia and can be ran to reproduce Fig. 5 & Supplementary Fig. 14 showing the results of fitting the nonlinear regression model to the yeast data.
 
 ## Mouse inflammation data
 
